@@ -1,26 +1,37 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: content-box;
 }
-body {
-    color: #080103;
+:root{
+    --frame-border-size: 0.2rem;
+    --frame-height: 1rem;
+    --frame-width: 4.5rem;
+    background:linear-gradient(#8b8d8f,#d49d36);
 }
-.header{
+.top{
     background: #8b8d8f;
     width: 100vw;
     height: 65px;
     font-size: 37px;
     opacity: 0.9;
 }
-nav u1{
+.links, .texts{
+    text-decoration: underline;
+    font-size:xx-large;
+    font-weight: 400;
+}
+.links{
+    color: #d49d36;
+}
+.links:hover{
+    color: whitesmoke;
+}
+nav u7 {
     display: flex;
     text-align: center;
     font-size: 2vw 2vh;
+    margin-right: 1rem;
 }
-nav u1 li{
-    color: black;
+nav u7 li{
     width: 100%;
     margin: 0;
     padding: .4%;
@@ -28,6 +39,159 @@ nav u1 li{
     justify-content: center;
     margin-top: 8px;
 }
+.top li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid;    
+}
+.slideshow{
+    background-color: var(--light);
+    border-radius: rpx;
+    padding: .5em;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.wrapper{
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+}
+.wrapper img {
+    width: 100%;
+    border-radius: 6px;
+    border: var(--frame-border-size) solid rgb(29, 25, 22);
+}
+.prev .next{
+    position: absolute;
+    top: 50%;
+    width: auto;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 600ms;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    color:whitesmoke;
+}
+.spacer{
+    height: 2px;
+    background-color: black;
+}
+.texts{
+    color: black;
+}
 .grid{
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1rem;    
+    margin-left: 1rem;
+}
+.container{
+    width: 270px;
+    height: 125px;
+}
+.card{
+    width: 270px;
+    height: 125px;
+    position: relative;
+    transition: transform 700ms;
+    transform-style: preserve-3d;
+}
+.container:hover > .card {
+    transform:rotateX(180deg)
+}
+.front{
+    border: var(--frame-border-size) solid rgb(29, 25, 22);
+    position: absolute;
+    height: 125px;
+    width: 270px;
+    margin: 0;
+    border-radius: 6px;
+    background-image: url("https://picsum.photos/1280/448/?image");
+    background-size: 400px;
+    background-repeat: no-repeat;
+}
+footer{
+    margin-top: 5rem;
+    display: flex;
+    padding-left: 0.3rem;
+    max-height: 15px;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-content: center;
+    gap:0;
+    font:bolder;
+    color: #d49d36;
+    text-decoration: underline;
+    font-family: 'Great Vibes', cursive;
+    font-size: large;
+}
+.back{
+    border: var(--frame-border-size) solid rgb(29, 25, 22);
+    position: absolute;
+    height: 125px;
+    width: 270px;
+    font-size: 10px;
+    border-radius: 6px;
+    background:linear-gradient(black,#d49d36);
+    transform: rotateX(180deg);
+    color: rgb(195, 193, 192);
+}
+.header{
+    font-family: 'Great Vibes', cursive;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+.email:not(.fa-sharp .fa-solid .fa-envelope):hover{
+    background-color: black;
+}.phone:not(.fa-sharp .fa-solid .fa-phone):hover{
+    background-color: black;
+}
+.email, .phone{
+    width: 10px;
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-content: flex-start;
+    color: #d49d36;
+    border-radius: 4px;
+    gap: 3px;
+    height: auto;
+}
+.text{
+    padding: .1rem;
+}
+.front,
+.back{
+    backface-visibility: hidden;
+}
+.pagefter{
+    position: relative;
+    background: transparent;
+    width: 100vw;
+    height: 65px;
+    flex:1;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+}
+#fttext{
+    font-size: 12px;
+    display:flex;
+    color: black;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    margin-top: 8px;
 }
