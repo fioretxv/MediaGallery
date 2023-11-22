@@ -45,8 +45,6 @@ nav u7 li{
     border-right: 1px solid;    
 }
 .slideshow{
-    background-color: var(--light);
-    border-radius: rpx;
     padding: .5em;
     display: flex;
     flex-direction: row;
@@ -105,16 +103,51 @@ nav u7 li{
 .container:hover > .card {
     transform:rotateX(180deg)
 }
-.front{
+.front1, .front2, .front3, .front4, .front5, .front6, .front7, .front8, .front9, .front10, .front11, .front12, .front12{
     border: var(--frame-border-size) solid rgb(29, 25, 22);
     position: absolute;
     height: 125px;
     width: 270px;
     margin: 0;
     border-radius: 6px;
-    background-image: url("https://picsum.photos/1280/448/?image");
     background-size: 400px;
     background-repeat: no-repeat;
+}
+.front1{
+    background-image: url("https://picsum.photos/1280/448/?image=235");
+}
+.front2{
+    background-image: url("https://picsum.photos/1280/448/?image=634");
+}
+.front3{
+    background-image: url("https://picsum.photos/1280/448/?image=969");
+}
+.front4{
+    background-image: url("https://picsum.photos/1280/448/?image=115");
+}
+.front5{
+    background-image: url("https://picsum.photos/1280/448/?image=193");
+}
+.front6{
+    background-image: url("https://picsum.photos/1280/448/?image=194");
+}
+.front7{
+    background-image: url("https://picsum.photos/1280/448/?image=853");
+}
+.front8{
+    background-image: url("https://picsum.photos/1280/448/?image=321");
+}
+.front9{
+    background-image: url("https://picsum.photos/1280/448/?image=583");
+}
+.front10{
+    background-image: url("https://picsum.photos/1280/448/?image=184");
+}
+.front11{
+    background-image: url("https://picsum.photos/1280/448/?image=947");
+}
+.front12{
+    background-image: url("https://picsum.photos/1280/448/?image=432");
 }
 footer{
     margin-top: 5rem;
