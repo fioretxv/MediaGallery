@@ -39,15 +39,11 @@ nav u7 li{
     justify-content: center;
     margin-top: 8px;
 }
-.top li a {
-    display: block;
-    padding: 20px 20px;
-    border-right: 1px solid;    
-}
 .slideshow{
     padding: .5em;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 1rem;
 }
 .wrapper{
@@ -61,13 +57,10 @@ nav u7 li{
     border: s solid rgb(29, 25, 22);
 }
 .prev .next{
-    position: absolute;
-    top: 50%;
     width: auto;
     color: aliceblue;
     font-weight: bold;
     font-size: 18px;
-    transition: 600ms;
 }
 .next{
     right: 0;
