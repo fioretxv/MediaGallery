@@ -58,7 +58,7 @@ nav u7 li{
 .wrapper img {
     width: 100%;
     border-radius: 6px;
-    border: var(--frame-border-size) solid rgb(29, 25, 22);
+    border: s solid rgb(29, 25, 22);
 }
 .prev .next{
     position: absolute;
